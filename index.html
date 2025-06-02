@@ -2,37 +2,44 @@
 <html>
 <head>
     <title>TeachCodeLabs | Teacher-Centric Coding Tools</title>
-    <meta name="description" content="Free coding lesson plans for educators">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-    body { 
-  font-family: 'Arial', sans-serif; 
-  line-height: 1.6; 
-  color: #333;
-}
-.btn {
-  background: #4299E1; 
-  color: white; 
-  padding: 10px 20px; 
-  border-radius: 5px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-.btn:hover { background: #2B6CB0; }
+        /* Modern CSS */
+        :root { --primary: #4299E1; --dark: #2D3748; }
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: var(--dark); color: white; padding: 20px; text-align: center; }
+        .container { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+        .btn { background: var(--primary); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; }
+        .btn:hover { background: #2B6CB0; }
+        .spotlight { background: #F7FAFC; padding: 15px; border-radius: 5px; margin: 20px 0; }
     </style>
 </head>
 <body>
-    <h1>TeachCodeLabs</h1>
-<p class="tagline">Coding pedagogy, simplified for <strong>teachers</strong>.</p>
-<p>🚀 Free lesson plans, templates, and workshops to help you teach tech <u>without a CS degree</u>.</p>
-<a href="#resources" class="btn">Explore Free Resources</a>
-    <div id="resources">
-  <h2>Free Resources</h2>
-  <ul>
-    <li><a href="https://github.com/UnsaBatool14/TeachCodeLabs/blob/main/resources/unplugged-coding.md">5-Day Unplugged Coding Challenge</a></li>
-  </ul>
-</div>
-<p>🔗 <strong>Join the waitlist:</strong>  
-<a href="mailto:unsabatool14@gmail.com?subject=TeachCodeLabs%20Updates">Email me</a>.</p>
+    <header>
+        <h1>TeachCodeLabs</h1>
+        <p>Pedagogy-first coding resources for teachers</p>
+    </header>
+
+    <div class="container">
+        <section id="mission">
+            <h2>🚀 Our Mission</h2>
+            <p>We help <strong>K-12 educators</strong> teach coding with confidence—no tech degree required.</p>
+            <a href="#resources" class="btn">Get Free Resources</a>
+        </section>
+
+        <section id="spotlight" class="spotlight">
+            <h2>👩‍🏫 Teacher Spotlight</h2>
+            <p><em>"TeachCodeLabs' lesson plans saved me 10 hours a week!"</em></p>
+            <p><strong>— Ms. Ahmed, 7th Grade Science Teacher</strong></p>
+        </section>
+
+        <section id="resources">
+            <h2>📚 Free Resources</h2>
+            <ul>
+                <li><a href="resources/unplugged-coding.md">5-Day Unplugged Coding Challenge</a></li>
+                <li><a href="templates/lesson-plan.md">Editable Lesson Plan Template</a></li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
